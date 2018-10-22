@@ -1,0 +1,4 @@
+﻿  VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
+  VisualGDB: Run "make CONFIG=Debug" in directory "/home/maxc/VisualGDB/f/mxc-2/test1" on faceall@192.168.1.72 (SSH)
+  g++ -o ../Debug/test1 -Wl,-gc-sections   -L../lib -L../Debug -Wl,--start-group ../Debug/test1.o -lpthread -lWatchDogClient  -Wl,--rpath='$ORIGIN'   -Wl,--end-group
+/usr/bin/ld : warning : libRunLogFile.so, needed by ../Debug/libWatchDogClient.so, not found (try using -rpath or -rpath-link)

@@ -1,0 +1,6 @@
+﻿  VisualGDB: Sending 4 updated source files to build machine...
+  VisualGDB: Run "make CONFIG=Debug" in directory "/home/maxc/VisualGDB/f/mxc-2/faWatchDogServer" on faceall@192.168.1.72 (SSH)
+  g++ -ggdb -ffunction-sections -O0 -std=c++11 -finput-charset=GBK  -I./gen-cpp -I../include -DDEBUG=1  -c faWatchDog.cpp -o ../Debug/faWatchDog.o -MD -MF ../Debug/faWatchDog.dep
+  g++ -ggdb -ffunction-sections -O0 -std=c++11 -finput-charset=GBK  -I./gen-cpp -I../include -DDEBUG=1  -c WatchDogServer.cpp -o ../Debug/WatchDogServer.o -MD -MF ../Debug/WatchDogServer.dep
+  g++ -ggdb -ffunction-sections -O0 -std=c++11 -finput-charset=GBK  -I./gen-cpp -I../include -DDEBUG=1  -c faWatchDogServerConfig.cpp -o ../Debug/faWatchDogServerConfig.o -MD -MF ../Debug/faWatchDogServerConfig.dep
+  g++ -o ../Debug/WatchDogServer -Wl,-gc-sections   -L../lib -L../Debug -Wl,--start-group ../Debug/faWatchDog.o ../Debug/faWatchDogServer.o ../Debug/FaWatchDogServer_constants.o ../Debug/faWatchDogServer_server.skeleton.o ../Debug/FaWatchDogServer_types.o ../Debug/WatchDogServer.o ../Debug/faWatchDogServerConfig.o -lthrift -lpthread -lRunLogFile  -Wl,--rpath='$ORIGIN'   -Wl,--end-group

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a7a6a459-b228-4cf3-8a3d-6c2a3f3daffe}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a2e8b500-09e2-47b8-8e67-19b6704e6ca7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{72e75e41-ac0a-44d4-8960-493883f76bad}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{d92ae0c7-75ca-4efa-bd06-3784852c3fdc}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{5b26adc9-9d93-4115-94da-aa3890bed43c}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="faWatchDog.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="faWatchDogServerConfig.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDogServer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen-cpp\faWatchDogServer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen-cpp\FaWatchDogServer_constants.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen-cpp\faWatchDogServer_server.skeleton.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen-cpp\FaWatchDogServer_types.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="faWatchDogServer-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="faWatchDogServer-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="faWatchDog.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="faWatchDogServerConfig.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gen-cpp\faWatchDogServer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gen-cpp\FaWatchDogServer_constants.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gen-cpp\FaWatchDogServer_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

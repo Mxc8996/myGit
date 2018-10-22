@@ -1,0 +1,4 @@
+﻿  VisualGDB: Sending 1 updated source file to build machine...
+  VisualGDB: Run "make CONFIG=Debug" in directory "/home/maxc/VisualGDB/f/mxc-2/faProtectProcess" on faceall@192.168.1.72 (SSH)
+  g++ -ggdb -ffunction-sections -O0 -std=c++11 -finput-charset=GBK  -I../include -DDEBUG=1  -c faProtectProcess.cpp -o ../Debug/faProtectProcess.o -MD -MF ../Debug/faProtectProcess.dep
+  g++ -o ../Debug/faProtectProcess -Wl,-gc-sections   -L../lib -L../Debug -Wl,--start-group ../Debug/faProtectProcess.o ../Debug/faProtectProcessConfig.o -lRunLogFile -lpthread  -Wl,--rpath='$ORIGIN'   -Wl,--end-group
